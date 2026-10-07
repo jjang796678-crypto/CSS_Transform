@@ -1,0 +1,25 @@
+@charset "utf-8" ; 
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 1px solid #333;
+    transition: all;
+    /*  */
+}
+.bgtr1:hover{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+.bgtr2:hover{
+    border-radius: 50%;
+    background-color: blueviolet;
+}
+.bgtr3:hover{
+    border-radius: 50%;
+    border-style: dotted;
+    border-width: 5px;
+    border-color: red;
+    transform: rotate(60deg) translateX(100px);
+}

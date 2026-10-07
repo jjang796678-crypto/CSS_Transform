@@ -1,0 +1,19 @@
+p::before{
+    content: "🍕";
+    font-size: 12px;
+}
+p::after{
+    content: "0000";
+    font-size: 12px;
+    color: red;
+}
+h2::after{
+    content: "\f015";
+font-family: "Font Awesome 6 Free";
+    color: red;
+    font-size: 12px;
+}
+.fa-beat{
+    font-size: 32px;
+    color: violet ;
+}

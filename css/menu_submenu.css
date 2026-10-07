@@ -1,0 +1,71 @@
+@charset "utf-8" ; 
+/* 초기화 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul ,li{
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+/* 헤더 */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    background-color: #e0e0e0;
+}
+/* 메뉴 */
+nav{
+    background-color: aqua;
+}
+.menu{
+    width: 500px    ;
+    display: flex;
+}
+.menu > li{
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+.menu > li > a{
+    display: block;
+    width: 100%;
+    background-color: red;
+    padding: 10px;
+}
+.menu > li:hover > a{
+    background-color: aqua;
+    color: red;;
+}
+/* 모든 서브메뉴가 나옴 */
+.menu:hover .submenu{
+    display: block;
+}
+/* 각 메뉴의 서브메뉴 하나만 나옴  */
+.menu > li:hover .submenu{
+    display: block;
+}
+/* 서브 메뉴 */
+.submenu{
+    position: absolute ;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+    background-color: antiquewhite;
+    z-index: 2;
+}
+.submenu > li a{
+padding: 10px;
+display: block;
+background-color: aquamarine;
+}
+.submenu li a:hover{
+    background-color: chartreuse;
+    color: red;
+}
